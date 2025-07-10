@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+/* 麵包屑導航元件 */
+.breadcrumb-item + .breadcrumb-item::before {
+    content: '/';
+    padding: 0 12px;
+    font-weight: 700;
+    color: $neutral_300;
+}
+.breadcrumb-item {
+    display: flex;
+    font-weight: 500;
+}
+.breadcrumb-link {
+    color: $neutral_600;
+}
+
+/* 側邊選單 */
+.menu {
+    a {
+        &:hover {
+            color: $primary_400;
+        }
+    }
+    .active {
+        color: $primary_400;
+    }
+}
+
+/* 分頁按鈕 */
+.page-item {
+    &.active {
+        font-weight: 500;
+        background-color: $primary_300;
+    }
+    &:hover {
+        background-color: $primary_300;
+    }
+}

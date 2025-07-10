@@ -1,4 +1,7 @@
 @use 'variables' as *;
+/* * {
+    outline: 1px solid #000;
+} */
 
 *,
 *::before,
@@ -27,6 +30,9 @@ a {
     text-decoration: none;
     display: block;
     font-weight: 500;
+    &:hover {
+        color: $primary_400;
+    }
 }
 
 /* 格線系統 */
@@ -57,39 +63,45 @@ a {
 .col-3 {
     width: calc(100% / 12 * 3);
 }
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+.col-10 {
+    width: calc(100% / 12* 10);
+}
 .col-12 {
     width: calc(100% / 12 * 12);
 }
 
 /* 通用樣式 */
-h1 {
+.heading-1 {
     font-size: 40px;
     line-height: 1.2;
     font-weight: 700;
 }
 
-h2 {
+.heading-2 {
     font-size: 32px;
     line-height: 1.2;
     font-weight: 700;
 }
 
-h3 {
+.heading-3 {
     font-size: 28px;
     line-height: 1.2;
     font-weight: 700;
 }
-h4 {
+.heading-4 {
     font-size: 24px;
     line-height: 1.2;
     font-weight: 700;
 }
-h5 {
+.heading-5 {
     font-size: 20px;
     line-height: 1.2;
     font-weight: 700;
 }
-h6 {
+.heading-6 {
     font-size: 16px;
     line-height: 1.2;
     font-weight: 700;
@@ -99,12 +111,46 @@ h6 {
 .text-sm {
     font-size: 14px;
 }
-
+.text-md {
+    font-weight: 500;
+}
 .text-primary-400 {
     color: $primary_400;
 }
 .text-neutral-900 {
     color: $neutral_900;
+}
+
+/* 按鈕 */
+.btn-page {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer; /* 改變游標樣式，可點的小手 */
+    background-color: transparent; /* 背景透明 */
+}
+.btn-neutral-filled-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 4px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer; /* 改變游標樣式，可點的小手 */
+    background-color: $neutral_900;
+    color: #fff;
+    &:hover {
+        background-color: $neutral_700;
+    }
+}
+
+/* 背景顏色 */
+.bg-primary-200 {
+    background-color: $primary_200;
+}
+.bg-neutral-100 {
+    background-color: $neutral_100;
 }
 
 /* 排版 */
@@ -132,6 +178,17 @@ h6 {
 .p-12 {
     padding: 12px;
 }
+
+.pb-4 {
+    padding-bottom: 4px;
+}
+.pb-12 {
+    padding-bottom: 12px;
+}
+.py-7 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
 .py-8 {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -140,9 +197,52 @@ h6 {
     padding-top: 12px;
     padding-bottom: 12px;
 }
-.mr-48 {
-    margin-right: 48px;
+.py-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.py-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+.mr-12 {
+    margin-right: 12px;
+}
+.mr-24 {
+    margin-right: 24px;
 }
 .mr-40 {
     margin-right: 40px;
+}
+.mr-48 {
+    margin-right: 48px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+/* .mb-20 {
+    margin-bottom: 20px;
+} */
+.mb-24 {
+    margin-bottom: 24px;
+}
+.mb-32 {
+    margin-bottom: 32px;
+}
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+.my-16 {
+    margin-top: 16px;
+    margin-bottom: 16px;
 }

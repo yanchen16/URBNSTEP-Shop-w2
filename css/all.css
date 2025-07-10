@@ -54,6 +54,9 @@ table {
   border-spacing: 0;
 }
 
+/* * {
+    outline: 1px solid #000;
+} */
 *,
 *::before,
 *::after {
@@ -81,6 +84,9 @@ a {
   text-decoration: none;
   display: block;
   font-weight: 500;
+}
+a:hover {
+  color: #57A203;
 }
 
 /* 格線系統 */
@@ -115,42 +121,50 @@ a {
   width: 25%;
 }
 
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
 .col-12 {
   width: 100%;
 }
 
 /* 通用樣式 */
-h1 {
+.heading-1 {
   font-size: 40px;
   line-height: 1.2;
   font-weight: 700;
 }
 
-h2 {
+.heading-2 {
   font-size: 32px;
   line-height: 1.2;
   font-weight: 700;
 }
 
-h3 {
+.heading-3 {
   font-size: 28px;
   line-height: 1.2;
   font-weight: 700;
 }
 
-h4 {
+.heading-4 {
   font-size: 24px;
   line-height: 1.2;
   font-weight: 700;
 }
 
-h5 {
+.heading-5 {
   font-size: 20px;
   line-height: 1.2;
   font-weight: 700;
 }
 
-h6 {
+.heading-6 {
   font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
@@ -161,12 +175,50 @@ h6 {
   font-size: 14px;
 }
 
+.text-md {
+  font-weight: 500;
+}
+
 .text-primary-400 {
   color: #57A203;
 }
 
 .text-neutral-900 {
   color: #212529;
+}
+
+/* 按鈕 */
+.btn-page {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer; /* 改變游標樣式，可點的小手 */
+  background-color: transparent; /* 背景透明 */
+}
+
+.btn-neutral-filled-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  border-radius: 4px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer; /* 改變游標樣式，可點的小手 */
+  background-color: #212529;
+  color: #fff;
+}
+.btn-neutral-filled-text:hover {
+  background-color: #495057;
+}
+
+/* 背景顏色 */
+.bg-primary-200 {
+  background-color: #E8FEC5;
+}
+
+.bg-neutral-100 {
+  background-color: #F8F9FA;
 }
 
 /* 排版 */
@@ -195,6 +247,19 @@ h6 {
   padding: 12px;
 }
 
+.pb-4 {
+  padding-bottom: 4px;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
+}
+
+.py-7 {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
 .py-8 {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -205,10 +270,99 @@ h6 {
   padding-bottom: 12px;
 }
 
-.mr-48 {
-  margin-right: 48px;
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.py-64 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.mr-24 {
+  margin-right: 24px;
 }
 
 .mr-40 {
   margin-right: 40px;
+}
+
+.mr-48 {
+  margin-right: 48px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+/* .mb-20 {
+    margin-bottom: 20px;
+} */
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.my-16 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.copyright {
+  text-align: center;
+  color: #6C757D;
+}
+
+/* 麵包屑導航元件 */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  padding: 0 12px;
+  font-weight: 700;
+  color: #DEE2E6;
+}
+
+.breadcrumb-item {
+  display: flex;
+  font-weight: 500;
+}
+
+.breadcrumb-link {
+  color: #6C757D;
+}
+
+/* 側邊選單 */
+.menu a:hover {
+  color: #57A203;
+}
+.menu .active {
+  color: #57A203;
+}
+
+/* 分頁按鈕 */
+.page-item.active {
+  font-weight: 500;
+  background-color: #C0FA73;
+}
+.page-item:hover {
+  background-color: #C0FA73;
 }
