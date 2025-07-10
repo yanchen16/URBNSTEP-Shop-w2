@@ -125,6 +125,14 @@ a:hover {
   width: 33.3333333333%;
 }
 
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
 .col-10 {
   width: 83.3333333333%;
 }
@@ -183,8 +191,20 @@ a:hover {
   color: #57A203;
 }
 
+.text-neutral-500 {
+  color: #ADB5BD;
+}
+
+.text-neutral-600 {
+  color: #6C757D;
+}
+
 .text-neutral-900 {
   color: #212529;
+}
+
+.text-danger-300 {
+  color: #D74F4F;
 }
 
 /* 按鈕 */
@@ -210,6 +230,22 @@ a:hover {
 }
 .btn-neutral-filled-text:hover {
   background-color: #495057;
+}
+
+.btn-neutral-outlined-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  padding: 12px 24px;
+  cursor: pointer; /* 改變游標樣式，可點的小手 */
+  background-color: transparent; /* 背景透明 */
+  border: 1px solid #212529;
+}
+.btn-neutral-outlined-text:hover {
+  background-color: #212529;
+  color: #fff;
 }
 
 /* 背景顏色 */
@@ -275,6 +311,11 @@ a:hover {
   padding-bottom: 24px;
 }
 
+.py-48 {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
 .py-64 {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -296,12 +337,28 @@ a:hover {
   margin-right: 24px;
 }
 
+.mr-30 {
+  margin-right: 30px;
+}
+
 .mr-40 {
   margin-right: 40px;
 }
 
 .mr-48 {
   margin-right: 48px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
 }
 
 .mb-16 {
@@ -317,6 +374,10 @@ a:hover {
 
 .mb-32 {
   margin-bottom: 32px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
 }
 
 .mb-48 {
@@ -365,4 +426,51 @@ a:hover {
 }
 .page-item:hover {
   background-color: #C0FA73;
+}
+
+/* 左側 - 產品圖片（參考助教設定） */
+.product-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -4px;
+  margin-left: -4px;
+}
+
+.product-col {
+  width: 50%;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+/* 右側 產品詳情 */
+/* 價格 */
+.del-price {
+  padding-left: 8px;
+}
+
+/* 顏色 */
+.product-color {
+  width: 64px;
+}
+
+/* 尺寸 */
+.btn-product-size {
+  width: 160px;
+  border: 1px solid #DEE2E6;
+}
+.btn-product-size.active {
+  border: 1px solid #212529;
+}
+
+.action-btn {
+  width: 259px;
+}
+.action-btn.active {
+  background-color: #212529;
+  color: #fff;
+}
+
+/* 細節介紹 */
+.info-block {
+  border-bottom: 1px solid #DEE2E6;
 }

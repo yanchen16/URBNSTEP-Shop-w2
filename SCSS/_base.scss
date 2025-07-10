@@ -66,6 +66,12 @@ a {
 .col-4 {
     width: calc(100% / 12 * 4);
 }
+.col-5 {
+    width: calc(100% / 12 *5);
+}
+.col-7 {
+    width: calc(100% / 12 * 7);
+}
 .col-10 {
     width: calc(100% / 12* 10);
 }
@@ -117,8 +123,17 @@ a {
 .text-primary-400 {
     color: $primary_400;
 }
+.text-neutral-500 {
+    color: $neutral_500;
+}
+.text-neutral-600 {
+    color: $neutral_600;
+}
 .text-neutral-900 {
     color: $neutral_900;
+}
+.text-danger-300 {
+    color: $danger_300;
 }
 
 /* 按鈕 */
@@ -142,6 +157,21 @@ a {
     color: #fff;
     &:hover {
         background-color: $neutral_700;
+    }
+}
+.btn-neutral-outlined-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+    padding: 12px 24px;
+    cursor: pointer; /* 改變游標樣式，可點的小手 */
+    background-color: transparent; /* 背景透明 */
+    border: 1px solid $neutral_900;
+    &:hover {
+        background-color: $neutral_900;
+        color: #fff;
     }
 }
 
@@ -201,6 +231,10 @@ a {
     padding-top: 24px;
     padding-bottom: 24px;
 }
+.py-48 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
 .py-64 {
     padding-top: 64px;
     padding-bottom: 64px;
@@ -219,6 +253,9 @@ a {
 .mr-24 {
     margin-right: 24px;
 }
+.mr-30 {
+    margin-right: 30px;
+}
 .mr-40 {
     margin-right: 40px;
 }
@@ -226,6 +263,15 @@ a {
     margin-right: 48px;
 }
 
+.mb-4 {
+    margin-bottom: 4px;
+}
+.mb-8 {
+    margin-bottom: 8px;
+}
+.mb-12 {
+    margin-bottom: 12px;
+}
 .mb-16 {
     margin-bottom: 16px;
 }
@@ -237,6 +283,9 @@ a {
 }
 .mb-32 {
     margin-bottom: 32px;
+}
+.mb-40 {
+    margin-bottom: 40px;
 }
 .mb-48 {
     margin-bottom: 48px;
